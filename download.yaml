@@ -1,5 +1,7 @@
-# Download configuration for ctd-ingest
-
-downloads:
-  - url: "http://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz"
-    local_name: "data/CTD_chemicals_diseases.tsv.gz"
+### This file is a YAML configuration that specifies
+### the data to be downloaded and ingested for this project.
+### The configuration is used by `kghub-downloader`.
+### For more information, see https://github.com/monarch-initiative/kghub-downloader
+---
+- url: "http://ctdbase.org/reports/CTD_chemicals_diseases.tsv.gz"
+  local_name: "data/CTD_chemicals_diseases.tsv.gz"
