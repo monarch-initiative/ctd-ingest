@@ -46,3 +46,4 @@ output/
 
 # uv
 uv.lock
+golden_output/
