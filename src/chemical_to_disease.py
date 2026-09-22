@@ -1,4 +1,3 @@
-import uuid
 
 import koza
 from biolink_model.datamodel.pydanticmodel_v2 import (
@@ -17,7 +16,6 @@ def transform_record(koza_transform, row):
         predicate = "biolink:treats_or_applied_or_studied_to_treat"
 
         association = ChemicalEntityToDiseaseOrPhenotypicFeatureAssociation(
-            id="uuid:" + str(uuid.uuid1()),
             subject=chemical_id,
             predicate=predicate,
             object=disease_id,
